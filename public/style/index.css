@@ -1,0 +1,84 @@
+html,
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 15px;
+    background-color: dodgerblue;
+}
+
+form {
+    background-color: #fff;
+    margin-top: 3vh;
+    /* box-shadow: 0 5px 10px 10px rgba(211, 211, 211, 0.637); */
+    border-radius: 30px;
+    width: clamp(500px, 80%, 280px);
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 16px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    box-shadow: inset 1px 1px 3px grey;
+}
+
+label {
+    padding-left: 20px;
+}
+
+.icon {
+    font-size: 110px;
+    display: flex;
+    justify-content: center;
+    color: dodgerblue;
+}
+
+button {
+    background-color: dodgerblue;
+    color: white;
+    padding: 14px 0;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+    border-radius: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 18;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.formcontainer {
+    text-align: center;
+    margin: 24px 50px 12px;
+}
+
+.container {
+    padding: 16px 0;
+    text-align: left;
+}
+
+span.psw {
+    float: right;
+    padding-top: 0;
+    padding-right: 15px;
+}
+
+/* Change styles for span on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}
